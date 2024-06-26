@@ -1,0 +1,114 @@
+CREATE TABLE Mesa (
+    Id INT PRIMARY KEY,
+    Estado INT
+);
+
+CREATE TABLE Prato (
+    Id INT PRIMARY KEY,
+    Nome VARCHAR(255),
+    Valor INT,
+    Descrição VARCHAR(255)
+);
+
+CREATE TABLE Ingrediente (
+    Id INT PRIMARY KEY,
+    Nome VARCHAR(255),
+    Estoque INT
+);
+
+CREATE TABLE Cliente (
+    Id INT PRIMARY KEY,
+    Nome VARCHAR(255),
+    Telefone INT
+);
+
+CREATE TABLE Pedido (
+    Id_Prato INT,
+    Id_Mesa INT,
+    Quantidade INT,
+    PRIMARY KEY (Id_Prato, Id_Mesa),
+    FOREIGN KEY (Id_Prato) REFERENCES Prato(Id),
+    FOREIGN KEY (Id_Mesa) REFERENCES Mesa(Id)
+);
+
+CREATE TABLE Compor (
+    Id_Prato INT,
+    Id_Ingrediente INT,
+    Quantidade INT,
+    PRIMARY KEY (Id_Prato, Id_Ingrediente),
+    FOREIGN KEY (Id_Prato) REFERENCES Prato(Id),
+    FOREIGN KEY (Id_Ingrediente) REFERENCES Ingrediente(Id)
+);
+
+CREATE TABLE Reserva (
+    ID_Cliente INT,
+    Id_Mesa INT,
+    Hora DATE,
+    PRIMARY KEY (ID_Cliente, Id_Mesa),
+    FOREIGN KEY (ID_Cliente) REFERENCES Cliente(Id),
+    FOREIGN KEY (Id_Mesa) REFERENCES Mesa(Id)
+);
+CRATE TABLE Fila (
+ Ip VARCHAR(255),
+ Position int
+);
+CREATE TABLE Mesa (
+    Id INT PRIMARY KEY,
+    Estado INT
+);
+
+CREATE TABLE Prato (
+    Id INT PRIMARY KEY,
+    Nome VARCHAR(255),
+    Valor INT,
+    Descrição VARCHAR(255)
+);
+
+CREATE TABLE Ingrediente (
+    Id INT PRIMARY KEY,
+    Nome VARCHAR(255),
+    Estoque INT
+);
+
+CREATE TABLE Cliente (
+    Id INT PRIMARY KEY,
+    Nome VARCHAR(255),
+    Telefone INT
+);
+
+CREATE TABLE Pedido (
+    Id_Prato INT,
+    Id_Mesa INT,
+    Quantidade INT,
+    PRIMARY KEY (Id_Prato, Id_Mesa),
+    FOREIGN KEY (Id_Prato) REFERENCES Prato(Id),
+    FOREIGN KEY (Id_Mesa) REFERENCES Mesa(Id)
+);
+
+CREATE TABLE Compor (
+    Id_Prato INT,
+    Id_Ingrediente INT,
+    Quantidade INT,
+    PRIMARY KEY (Id_Prato, Id_Ingrediente),
+    FOREIGN KEY (Id_Prato) REFERENCES Prato(Id),
+    FOREIGN KEY (Id_Ingrediente) REFERENCES Ingrediente(Id)
+);
+
+CREATE TABLE Reserva (
+    ID_Cliente INT,
+    Id_Mesa INT,
+    Hora DATE,
+    PRIMARY KEY (ID_Cliente, Id_Mesa),
+    FOREIGN KEY (ID_Cliente) REFERENCES Cliente(Id),
+    FOREIGN KEY (Id_Mesa) REFERENCES Mesa(Id)
+);
+CRATE TABLE Fila (
+ Ip VARCHAR(255),
+ Position int
+);
+CREATE TABLE Funcionario (
+    Id INT PRIMARY KEY,
+    Nome VARCHAR(255),
+    Usuario VARCHAR(100) UNIQUE,
+    Senha VARCHAR(100)
+);
