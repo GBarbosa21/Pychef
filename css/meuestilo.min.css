@@ -332,3 +332,12 @@ body {
 .topButton:hover {
     background-color: #555;
 }
+
+.lblReserva{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
