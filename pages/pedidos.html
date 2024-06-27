@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body class="over">
 
     <!-- NavBar de cabeçalho-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -41,109 +41,132 @@
             </ul>
         </div>
         <a type="button" class="btn btn-secondary" href="login.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill"
+                viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
         </a>
 
     </nav>
 
     <!-- CARDS DE PEDIDOS -->
-    <div class="container">
-        <div class="row">
-            <!-- CARDs DE PEDIDOS -->
-
-            <!-- CARD PYCANHA -->
-            <div class="col-md-3">
-                <div class="card bg-light mb-3 cardPed" style="max-width: 18rem;">
-                    <div class="card-header">PYcanha</div>
-                    <div class="card-body">
-                        <button
-                            onclick="document.querySelector('#steve').value=parseInt(document.querySelector('#steve').value)<1?parseInt(document.querySelector('#steve').value):parseInt(document.querySelector('#steve').value)-1"">-</button>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8"></div>
+                <div class="col-sm-2">
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="Num_Mesa">Mesa:</span>
+                            </div>
+                            <input type="number" class="form-control" placeholder="0" min="0" max="10"
+                                aria-label="Username" aria-describedby="NumeroMesa" id="exampleInputMesa">
+                        </div>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-success">Finalizar Pedido</button>
+                </div>
+            </div>
+            <div class="row my-3">
+                <!-- CARDs DE PEDIDOS -->
+                <!-- CARD PYCANHA -->
+                <div class="col-md-3">
+                    <div class="card bg-light mb-3 cardPed" style="max-width: 18rem;">
+                        <div class="card-header">PYcanha</div>
+                        <div class="card-body">
+                            <button
+                                onclick="document.querySelector('#steve').value=parseInt(document.querySelector('#steve').value)<1?parseInt(document.querySelector('#steve').value):parseInt(document.querySelector('#steve').value)-1"">-</button>
                             <input type=" number" id="steve" min="0" max="20" value=0 class="wdtQtd">
-                            <button
-                                onclick="document.querySelector('#steve').value=parseInt(document.querySelector('#steve').value)>19?parseInt(document.querySelector('#steve').value):parseInt(document.querySelector('#steve').value)+1">+</button>
-                            <button type="button" class="btn btn-success">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-check" viewBox="0 0 16 16">
-                                    <path
-                                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
-                                    </path>
-                                </svg>
-                            </button>
+                                <button
+                                    onclick="document.querySelector('#steve').value=parseInt(document.querySelector('#steve').value)>19?parseInt(document.querySelector('#steve').value):parseInt(document.querySelector('#steve').value)+1">+</button>
+                                <button type="button" class="btn btn-success">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
+                                        </path>
+                                    </svg>
+                                </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- CARD Bac#lhau -->
-            <div class="col-md-3">
-                <div class="card bg-light mb-3 cardPed" style="max-width: 18rem;">
-                    <div class="card-header">Bac#lhau</div>
-                    <div class="card-body">
-                        <button
-                            onclick="document.querySelector('#steve1').value=parseInt(document.querySelector('#steve1').value)<1?parseInt(document.querySelector('#steve1').value):parseInt(document.querySelector('#steve1').value)-1"">-</button>
+                <!-- CARD Bac#lhau -->
+                <div class="col-md-3">
+                    <div class="card bg-light mb-3 cardPed" style="max-width: 18rem;">
+                        <div class="card-header">Bac#lhau</div>
+                        <div class="card-body">
+                            <button
+                                onclick="document.querySelector('#steve1').value=parseInt(document.querySelector('#steve1').value)<1?parseInt(document.querySelector('#steve1').value):parseInt(document.querySelector('#steve1').value)-1"">-</button>
                             <input type=" number" id="steve1" min="0" max="20" value=0 class="wdtQtd">
-                            <button
-                                onclick="document.querySelector('#steve1').value=parseInt(document.querySelector('#steve1').value)>19?parseInt(document.querySelector('#steve1').value):parseInt(document.querySelector('#steve1').value)+1">+</button>
-                            <button type="button" class="btn btn-success">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-check" viewBox="0 0 16 16">
-                                    <path
-                                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
-                                    </path>
-                                </svg>
-                            </button>
+                                <button
+                                    onclick="document.querySelector('#steve1').value=parseInt(document.querySelector('#steve1').value)>19?parseInt(document.querySelector('#steve1').value):parseInt(document.querySelector('#steve1').value)+1">+</button>
+                                <button type="button" class="btn btn-success">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
+                                        </path>
+                                    </svg>
+                                </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- EXEMPLO -->
-            <div class="col-md-3">
-                <div class="card bg-light mb-3 cardPed" style="max-width: 18rem;">
-                    <div class="card-header">Bac#lhau</div>
-                    <div class="card-body">
-                        <button
-                            onclick="document.querySelector('#steve2').value=parseInt(document.querySelector('#steve2').value)<1?parseInt(document.querySelector('#steve2').value):parseInt(document.querySelector('#steve2').value)-1"">-</button>
+                <!-- EXEMPLO -->
+                <div class="col-md-3">
+                    <div class="card bg-light mb-3 cardPed" style="max-width: 18rem;">
+                        <div class="card-header">Bac#lhau</div>
+                        <div class="card-body">
+                            <button
+                                onclick="document.querySelector('#steve2').value=parseInt(document.querySelector('#steve2').value)<1?parseInt(document.querySelector('#steve2').value):parseInt(document.querySelector('#steve2').value)-1"">-</button>
                             <input type=" number" id="steve2" min="0" max="20" value=0 class="wdtQtd">
-                            <button
-                                onclick="document.querySelector('#steve2').value=parseInt(document.querySelector('#steve2').value)>19?parseInt(document.querySelector('#steve2').value):parseInt(document.querySelector('#steve2').value)+1">+</button>
-                            <button type="button" class="btn btn-success">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-check" viewBox="0 0 16 16">
-                                    <path
-                                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
-                                    </path>
-                                </svg>
-                            </button>
+                                <button
+                                    onclick="document.querySelector('#steve2').value=parseInt(document.querySelector('#steve2').value)>19?parseInt(document.querySelector('#steve2').value):parseInt(document.querySelector('#steve2').value)+1">+</button>
+                                <button type="button" class="btn btn-success">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
+                                        </path>
+                                    </svg>
+                                </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- EXEMPLO 2 -->
-            <div class="col-md-3">
-                <div class="card bg-light mb-3 cardPed" style="max-width: 18rem;">
-                    <div class="card-header">Bac#lhau</div>
-                    <div class="card-body">
-                        <button
-                            onclick="document.querySelector('#steve3').value=parseInt(document.querySelector('#steve3').value)<1?parseInt(document.querySelector('#steve3').value):parseInt(document.querySelector('#steve3').value)-1"">-</button>
+                <!-- EXEMPLO 2 -->
+                <div class="col-md-3">
+                    <div class="card bg-light mb-3 cardPed" style="max-width: 18rem;">
+                        <div class="card-header">Bac#lhau</div>
+                        <div class="card-body">
+                            <button
+                                onclick="document.querySelector('#steve3').value=parseInt(document.querySelector('#steve3').value)<1?parseInt(document.querySelector('#steve3').value):parseInt(document.querySelector('#steve3').value)-1"">-</button>
                             <input type=" number" id="steve3" min="0" max="20" value=0 class="wdtQtd">
-                            <button
-                                onclick="document.querySelector('#steve3').value=parseInt(document.querySelector('#steve3').value)>19?parseInt(document.querySelector('#steve3').value):parseInt(document.querySelector('#steve3').value)+1">+</button>
-                            <button type="button" class="btn btn-success">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-check" viewBox="0 0 16 16">
-                                    <path
-                                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
-                                    </path>
-                                </svg>
-                            </button>
+                                <button
+                                    onclick="document.querySelector('#steve3').value=parseInt(document.querySelector('#steve3').value)>19?parseInt(document.querySelector('#steve3').value):parseInt(document.querySelector('#steve3').value)+1">+</button>
+                                <button type="button" class="btn btn-success">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
+                                        </path>
+                                    </svg>
+                                </button>
+                        </div>
                     </div>
                 </div>
+                </form>
             </div>
-
-
             <!-- FIM CARDS PEDIDOS -->
         </div>
+        <button onclick="topFunction()" id="topButton" title="Voltar ao Topo" class="topButton">
+            Voltar Ao topo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+              </svg>
+        </button>
     </div>
 
     <!-- FOOTER -->
@@ -186,6 +209,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <script src="js/meuScript.js" crossorigin="anonymous"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
@@ -214,6 +239,25 @@
             decrement();
             increment();
         }
+
+        // Pegar o botão
+        var topButton = document.getElementById("topButton");
+
+        // Mostrar o botão quando rolar 20px para baixo a partir do topo do documento
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+
+        // Quando clicar no botão, rolar suavemente até o topo da página
+        function topFunction() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }   
     </script>
 
 </body>
