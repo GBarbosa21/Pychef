@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!-- Meus CSS -->
+  <link rel="stylesheet" href="./css/meuestilo.min.css">
+
+  <link href="img/favicon.ico" rel="icon">
+  <title>PyChef - Mesas</title>
+
+</head>
+
+<body>
+
+  <!-- NavBar de cabeçalho-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand PyTitulo" href="index.html">PyChef</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pratos.html">Pratos</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Mesas <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+    <a href="login.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-person-fill"
+        viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+      </svg>
+    </a>
+  </nav>
+
+  <!-- INICIO HEADER FILA -->
+  <h1 class="pySlogan">Sua Posição na Fila</h1>
+  <hr class="linha2">
+  <p class="posFila">1</p>
+
+  <!-- CONTAINER TABLE FILA -->
+  <div class="container py-5">
+    <table class="tabMesas">
+      <tr>
+        <td class="tabFila">Pessoas na sua frente:</td>
+        <td class="tabResult">1</td>
+      </tr>
+      <tr>
+        <td class="tabFila">Hora Prevista da Entrada</td>
+        <td class="tabResult">20:00</td>
+      </tr>
+      <tr>
+        <td class="tabFila">Tempo de espera restante</td>
+        <td class="tabResult">00:45</td>
+      </tr>
+    </table>
+
+    <form class="border rounded my-4 p-2 bg-light">
+      <h3 class="txtMesas text-body text-monospace text-center">Entre na fila virtual</h3>
+      <input class="form-control my-3" type="text" placeholder="Seu Nome">
+      <div class="form-row">
+        <div class="col-md-4"></div>
+        <div class="col-sm-2">
+          <a class="btn btn-primary my-2 py-3 shadow p-3 btnSairFila" type="submit" href="reservas.html">Sair da
+            Fila</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- FIM TABLE FILA -->
+
+  <footer class="ftBS">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1">
+          <img src="img/garfo.png" class="imgFooter">
+        </div>
+        <div class="col-sm-2">
+          <img src="img/vinho.png" class="imgFooter">
+        </div>
+        <div class="col-sm-2">
+          <img src="img/hamburguer.png" class="imgFooter">
+        </div>
+        <div class="col-sm-2">
+          <img src="img/PyChefIc.png" class="pyImg">
+          <p class="PyFoot">PyChef</p>
+        </div>
+        <div class="col-sm-2">
+          <img src="img/hamburguer.png" class="imgFooter">
+        </div>
+        <div class="col-sm-2">
+          <img src="img/vinho.png" class="imgFooter ">
+        </div>
+        <div class="col-sm-1">
+          <img src="img/garfo.png" class="imgFooter">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Criando um namimg rights da pagina -->
+    <p class="naming my-4">Desenvolvido com orgulho por PyChef. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
